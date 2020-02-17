@@ -9,7 +9,7 @@ conn = pyodbc.connect(str)
 
 cursor = conn.cursor()
 
-cursor.execute('select top 10 * from Usuario')
+cursor.execute('SELECT "Édipo Juan" AS Name, 31 AS YearsOld')
 row = cursor.fetchone()
 
 while row:
